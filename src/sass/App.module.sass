@@ -1,0 +1,17 @@
+@import 'constants'
+
+.app_wrapper_outer
+  align-content: stretch
+  background: $bg-color-light
+  color: $text-color
+  display: flex
+  flex-direction: column
+  height: 100%
+
+  .app_wrapper_inner
+    display: flex
+    height: 100%
+
+    & > .content
+      flex: 1
+      overflow: auto

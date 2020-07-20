@@ -1,0 +1,62 @@
+@import 'constants'
+
+$sidebar-icon-x-margin: 16px
+$sidebar-item-accent-width: 4px;
+$sidebar-item-font-size: 14px
+$sidebar-item-y-padding: 8px
+$sidebar-width: 200px
+
+.sidebar
+  background: $bg-color-dark
+  max-width: $sidebar-width
+  min-width: $sidebar-width
+  padding-top: $sidebar-item-y-padding
+  width: $sidebar-width
+
+  .sidebar_items
+    list-style: none
+    margin: 0
+    padding: 0
+
+    .sidebar_item
+      .sidebar_item_link
+        align-items: center
+        color: $link-color
+        cursor: pointer
+        display: flex
+        font-size: $sidebar-item-font-size
+        font-weight: 500
+        outline: none
+        padding-bottom: $sidebar-item-y-padding
+        padding-left: ($sidebar-icon-x-margin + $sidebar-item-accent-width)
+        padding-right: 12px
+        padding-top: $sidebar-item-y-padding
+        position: relative
+        text-decoration: none
+
+        &.selected::after
+          background: $accent-color
+          bottom: 0
+          content: ''
+          display: inline-block
+          left: 0
+          margin: $sidebar-item-y-padding 0
+          position: absolute
+          top: 0
+          width: $sidebar-item-accent-width
+
+        &.selected,
+        &:hover
+          color: $link-color-hover
+
+        &:active
+          color: $link-color-active
+
+        .icon
+          align-items: center
+          display: inline-flex
+          flex-direction: column
+          font-size: $sidebar-item-font-size * 10/7
+          justify-content:
+          margin-right: $sidebar-icon-x-margin
+          width: 20px
