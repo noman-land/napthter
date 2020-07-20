@@ -11,6 +11,8 @@ import { routes } from '../constants/routes';
 import rootReducer from '../reducers';
 import styles from '../../sass/App.module.sass';
 
+import 'semantic-ui-css/semantic.min.css'
+
 export default class App extends Component {
   constructor() {
     super();
