@@ -10,6 +10,7 @@ export const AddFileButton = () => {
   }, []);
   const handleChange = useCallback(({ target: { files: [file] } }) => {
     readMeta(file).then(meta => {
+      console.log(meta)
       // addToLibrary(meta);
     })
   }, []);
