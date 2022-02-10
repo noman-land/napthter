@@ -12,7 +12,7 @@
     "ipfs": "^0.48.0",
     "lint-staged": "^10.2.11",
     "music-metadata-browser": "^2.1.0",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "orbit-db": "^0.24.2",
     "prettier": "^2.0.5",
     "react": "^16.13.1",
